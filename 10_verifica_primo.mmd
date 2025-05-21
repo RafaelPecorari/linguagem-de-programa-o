@@ -1,0 +1,8 @@
+flowchart TD
+    start(( Início )) --> input[\ Digite um número \]
+    input --> verifica[/ Verifica se é divisível apenas por 1 e ele mesmo /]
+    verifica --> cond{ É primo? }
+    cond --> |Sim| sim[/ Número é Primo /]
+    cond --> |Não| nao[/ Número Não é Primo /]
+    sim --> fim([ Fim ])
+    nao --> fim

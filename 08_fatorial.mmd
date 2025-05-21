@@ -1,0 +1,9 @@
+flowchart TD
+    start(( Início )) --> input[\ Digite um número \]
+    input --> init[/ fatorial = 1 /]
+    init --> loop{ número > 1? }
+    loop --> |Sim| multiplica[/ fatorial *= número /]
+    multiplica --> decrementa[/ número -= 1 /]
+    decrementa --> loop
+    loop --> |Não| resultado[/ Exibe fatorial /]
+    resultado --> fim([ Fim ])

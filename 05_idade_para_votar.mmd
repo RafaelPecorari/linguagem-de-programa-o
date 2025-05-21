@@ -1,0 +1,7 @@
+flowchart TD
+    start(( Início )) --> input[\ Digite sua idade \]
+    input --> verifica{ Idade >= 16? }
+    verifica --> |Sim| pode[/ Pode Votar /]
+    verifica --> |Não| nao_pode[/ Não Pode Votar /]
+    pode --> fim([ Fim ])
+    nao_pode --> fim

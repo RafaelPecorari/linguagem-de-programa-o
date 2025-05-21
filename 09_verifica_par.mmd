@@ -1,0 +1,7 @@
+flowchart TD
+    start(( Início )) --> input[\ Digite um número \]
+    input --> verifica{ número % 2 == 0? }
+    verifica --> |Sim| par[/ Número é Par /]
+    verifica --> |Não| impar[/ Número é Ímpar /]
+    par --> fim([ Fim ])
+    impar --> fim

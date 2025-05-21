@@ -1,0 +1,10 @@
+flowchart TD
+    start(( Início )) --> nota[\ Digite sua Nota \]
+    nota --> frequencia[\ Digite sua Frequência \]
+    frequencia --> cond1{ Nota >= 50? }
+    cond1 --> |Não| reprovado[/ Reprovado /]
+    cond1 --> |Sim| cond2{ Frequência >= 75%? }
+    cond2 --> |Sim| aprovado[/ Aprovado /]
+    cond2 --> |Não| reprovado
+    aprovado --> fim([ Fim ])
+    reprovado --> fim

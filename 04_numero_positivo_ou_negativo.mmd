@@ -1,0 +1,7 @@
+flowchart TD
+    start(( Início )) --> input[\ Digite um número \]
+    input --> verifica{ Número >= 0? }
+    verifica --> |Sim| positivo[/ Número Positivo /]
+    verifica --> |Não| negativo[/ Número Negativo /]
+    positivo --> fim([ Fim ])
+    negativo --> fim
